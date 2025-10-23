@@ -159,5 +159,9 @@ public class AutoAttack {
     public static void setAutoAttack(boolean enabled) {
         autoAttackEnabled = enabled;
     }
+
+    public static void setAutoAttackEnabled(boolean enabled) {
+        autoAttackEnabled = enabled;
+    }
 }
 

@@ -7,3 +7,8 @@
 /gamemode survival
 /gamemode creative
 /time set day
+/gamerule keepInventory true
+/gamemode survival
+/time set day
+/gamemode creative
+/time set day

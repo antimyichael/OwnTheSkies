@@ -15,6 +15,9 @@
     "client": [
       "datathorn.owntheskies.client.OwntheskiesClient"
     ],
+    "modmenu": [
+      "datathorn.owntheskies.config.ModMenuIntegration"
+    ],
     "main": [
       "datathorn.owntheskies.Owntheskies"
     ]

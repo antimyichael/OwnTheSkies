@@ -24,7 +24,7 @@ public class ElytraLauncher {
     private static final long GLIDE_START_DELAY = 200;
     private static final long FIREWORK_DELAY = 250;
     private static final long FIREWORK_INTERVAL = 300; // Time between firework uses
-    private static final int MAX_FIREWORKS = 3; // Maximum fireworks to use per launch
+    private static int MAX_FIREWORKS = 1; // Maximum fireworks to use per launch (configurable)
     private static int fireworksUsed = 0;
 
     // Track if we swapped armor so we can swap back
@@ -129,7 +129,7 @@ public class ElytraLauncher {
                 float targetPitch = 85.0f;
                 float currentPitch = player.getPitch();
                 if (Math.abs(currentPitch - targetPitch) > 5) {
-                    float newPitch = currentPitch + (targetPitch - currentPitch) * 0.8f; // Increased from 0.3 to 0.8 for faster adjustment
+                    float newPitch = currentPitch + (targetPitch - currentPitch); // Increased from 0.3 to 0.8 for faster adjustment
                     player.setPitch(newPitch);
                 } else {
                     player.setPitch(targetPitch);
@@ -369,6 +369,11 @@ public class ElytraLauncher {
         autoLaunchEnabled = enabled;
     }
 
+    public static void setMaxFireworks(int count) {
+        // Clamp between 1 and 10
+        MAX_FIREWORKS = Math.max(1, Math.min(10, count));
+    }
+
     public static LaunchState getCurrentState() {
         return currentState;
     }
@@ -377,4 +382,3 @@ public class ElytraLauncher {
         return currentState != LaunchState.IDLE && currentState != LaunchState.COMPLETE;
     }
 }
-

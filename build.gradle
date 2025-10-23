@@ -38,7 +38,7 @@ dependencies {
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
     // ModMenu integration - optional, only if user has ModMenu installed
-    // modCompileOnly "com.terraformersmc:modmenu:12.0.0"
+    modImplementation "com.terraformersmc:modmenu:12.0.0"
 }
 
 processResources {

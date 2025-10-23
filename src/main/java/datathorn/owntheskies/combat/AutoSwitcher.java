@@ -163,6 +163,10 @@ public class AutoSwitcher {
         autoSwitchEnabled = enabled;
     }
 
+    public static void setAutoSwitchEnabled(boolean enabled) {
+        autoSwitchEnabled = enabled;
+    }
+
     public static double getMinFallSpeed() {
         return MIN_FALL_SPEED;
     }

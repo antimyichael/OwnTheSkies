@@ -246,12 +246,20 @@ public class WeaponSwapper {
         weaponSwapEnabled = !weaponSwapEnabled;
     }
 
+    public static void setWeaponSwapEnabled(boolean enabled) {
+        weaponSwapEnabled = enabled;
+    }
+
     public static boolean isArmorSwapEnabled() {
         return armorSwapEnabled;
     }
 
     public static void toggleArmorSwap() {
         armorSwapEnabled = !armorSwapEnabled;
+    }
+
+    public static void setArmorSwapEnabled(boolean enabled) {
+        armorSwapEnabled = enabled;
     }
 
     public static SwapType getCurrentSwapType() {
