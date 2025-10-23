@@ -1,0 +1,8 @@
+{
+  "maxFireworks": 1,
+  "autoSwitchEnabled": true,
+  "weaponSwapEnabled": true,
+  "armorSwapEnabled": true,
+  "autoAttackEnabled": true,
+  "landingIndicatorEnabled": true
+}
