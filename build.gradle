@@ -38,7 +38,8 @@ dependencies {
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
     // ModMenu integration - optional, only if user has ModMenu installed
-    modImplementation "com.terraformersmc:modmenu:12.0.0"
+    // ModMenu 11.0.3 is compatible with Minecraft 1.21
+    modImplementation "com.terraformersmc:modmenu:11.0.3"
 }
 
 processResources {

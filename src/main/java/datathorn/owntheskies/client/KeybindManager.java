@@ -13,7 +13,6 @@ import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
 import net.minecraft.client.option.KeyBinding;
 import net.minecraft.client.util.InputUtil;
 import net.minecraft.text.Text;
-import net.minecraft.util.Identifier;
 import org.lwjgl.glfw.GLFW;
 
 public class KeybindManager {
@@ -31,8 +30,8 @@ public class KeybindManager {
     private static KeyBinding previousLaunchModeKey;
 
     public static void register() {
-        // Create a custom category for our keybindings using Identifier
-        KeyBinding.Category category = new KeyBinding.Category(Identifier.of("owntheskies", "combat"));
+        // Category for our keybindings (string-based)
+        String category = "category.owntheskies.combat";
 
         toggleAutoSwitchKey = KeyBindingHelper.registerKeyBinding(new KeyBinding(
             "key.owntheskies.toggle_auto_switch",
